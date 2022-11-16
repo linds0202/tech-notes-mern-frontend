@@ -14,9 +14,12 @@ import PreFetch from './features/auth/PreFetch'
 import PersistLogin from './features/auth/PersistLogin'
 import RequireAuth from './features/auth/RequireAuth'
 import { ROLES } from '../src/config/roles'
+import useTitle from './hooks/useTitle'
 
 
 function App() {
+  useTitle('Repair Shop')
+  
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
